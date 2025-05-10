@@ -19,7 +19,8 @@ export default function Home() {
             Get started by editing <code>src/app/page.tsx</code>.
           </li>
           <li>Save and see your changes instantly.</li>
-          <Link href="/useState">useState</Link>
+          <p><Link href="/useState">useState</Link></p>
+          <p><Link href="/useEffect">useEffect</Link></p>
         </ol>
 
         <div className={styles.ctas}>
