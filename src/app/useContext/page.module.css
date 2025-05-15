@@ -1,0 +1,11 @@
+.black {
+  color: white;
+  background-color: black;
+  border: 1px;
+}
+
+.white {
+  color: black;
+  background-color: white;
+  border: 1px;
+}
