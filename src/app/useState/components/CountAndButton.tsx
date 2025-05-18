@@ -4,8 +4,11 @@ import { useState } from "react"
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 
+type Props = {
+  page: string;
+}
 
-export function CountAndButton() {
+export function CountAndButton({page}: Props) {
   const [count, setCount] = useState(0);
   const pathname = usePathname();
   const router = useRouter();
@@ -16,12 +19,12 @@ export function CountAndButton() {
   }
 
   function handleRouter() {
-    router.push("/useRouter" , {scroll: false})
+    router.push(`/${page}` , {scroll: false})
   }
 
   return (
     <>
-      <button onClick={handleRouter}>useRouter</button>
+      <button onClick={handleRouter}>{page}</button>
       <p>Count:{count}</p>
       <button onClick={handleClick}>Increment</button>
     </>

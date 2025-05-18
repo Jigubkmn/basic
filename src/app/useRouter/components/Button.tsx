@@ -2,14 +2,18 @@
 
 import { useRouter } from "next/navigation";
 
-export function Button() {
+type Props = {
+  page: string;
+}
+
+export function Button({page}: Props) {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/useState" , {scroll: false})
+    router.push(`/${page}` , {scroll: false})
   }
 
   return (
-      <button onClick={handleClick}>useState</button>
+      <button onClick={handleClick}>{page}</button>
   )
 }
