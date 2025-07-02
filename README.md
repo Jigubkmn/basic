@@ -37,3 +37,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 # 練習
+aaaa
+cccc
+これはここで作業する
